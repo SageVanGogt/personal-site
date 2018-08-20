@@ -1,0 +1,21 @@
+.App {
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-rows: 25vh 25vh 50vh;
+  grid-template-areas: "a a b" "c d e" "f f f"; }
+
+.App-header {
+  grid-area: b; }
+
+.App-nav {
+  margin: auto;
+  grid-area: f; }
+
+.App-nav--list {
+  display: flex;
+  list-style: none; }
+  .App-nav--list li {
+    margin-right: 40px; }
+
+h1 {
+  color: #98999b; }

@@ -7,6 +7,9 @@
 .App-header {
   grid-area: b; }
 
+.App-name {
+  transform: rotate(90deg); }
+
 .App-nav {
   margin: auto;
   grid-area: f; }

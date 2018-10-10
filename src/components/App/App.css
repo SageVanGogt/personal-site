@@ -1,14 +1,16 @@
-.App {
+#page-wrap {
   display: grid;
+  background-image: url("./../../snowimage.jpg");
+  background-size: cover;
   grid-template-columns: 20vw 60vw 20vw;
   grid-template-rows: 25vh 25vh 50vh;
   grid-template-areas: "a a b" "c d e" "f f f"; }
 
 .App-header {
-  grid-area: b; }
+  grid-area: a; }
 
 .App-name {
-  transform: rotate(90deg); }
+  margin-left: 100px; }
 
 .App-nav {
   margin: auto;
@@ -20,5 +22,52 @@
   .App-nav--list li {
     margin-right: 40px; }
 
+.App-nav--list {
+  color: white; }
+
 h1 {
   color: #98999b; }
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px; }
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47; }
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px; }
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7; }
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em; }
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47; }
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em; }
+
+/* Individual item */
+.bm-item {
+  display: inline-block; }
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3); }

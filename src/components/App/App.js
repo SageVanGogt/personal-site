@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { slide as Menu } from 'react-burger-menu'
+import { slide as Menu } from 'react-burger-menu';
+import { Link, Switch, Route } from 'react-router-dom';
+import { Projects } from './../Projects/Projects';
+import { Contact } from './../Contact/Contact';
+import { Home } from './../Home/Home';
 import './App.css';
 
 
@@ -22,19 +26,20 @@ class App extends Component {
             <a id="contact" className="menu-item" href="/contact">Contact</a>
             <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
         </Menu>
-        <section id="page-wrap">
-          <header className="App-header">
-            <h1 className="App-name">Sage L. Vogt</h1>
-            <h1 className="App-job">Software Developer</h1>
-          </header>
-          <nav className="App-nav">
-            <ul className="App-nav--list">
-              <li><a>contact me</a></li>
-              <li><a>projects</a></li>
-              <li><a>resume</a></li>
-            </ul>
-          </nav>
-        </section>
+        <Switch>
+          <Route 
+            exact path="/"
+            component={Home}
+          />
+          <Route 
+            exact path="/contact"
+            component={Contact}
+          />
+          <Route 
+            exact path="/projects" 
+            component={Projects}
+          />
+        </Switch> 
       </div>
     );
   }

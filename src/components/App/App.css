@@ -23,7 +23,9 @@
     margin-right: 40px; }
 
 .App-nav--list {
-  color: white; }
+  color: white;
+  font-family: 'K2D', sans-serif;
+  font-size: 2rem; }
 
 h1 {
   color: #98999b; }
